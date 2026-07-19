@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Web App</title>
+  <title>Мій товарний облік</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1 id="helloText">Привіт 👋</h1>
+
+  <h1>Мій товарний облік 📦</h1>
+
+  <div class="form">
+    <input type="text" id="name" placeholder="Назва товару" />
+    <input type="number" id="cost" placeholder="Собівартість" />
+    <input type="number" id="price" placeholder="Ціна продажу" />
+    <button onclick="addProduct()">Додати</button>
   </div>
 
+  <h2>Список товарів</h2>
+  <div id="products"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
